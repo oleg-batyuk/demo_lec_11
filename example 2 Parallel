@@ -1,4 +1,11 @@
 #!/usr/bin/env groovy
+properties([
+        parameters([
+                string(name: 'RANCHER_VERSION', defaultValue: '2.5.9', description: 'Rancher version.'),
+
+        ])
+])
+
 pipeline {
   agent any
   stages {
